@@ -1,0 +1,141 @@
+@import "placeholder";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(2, 1, 5);
+}
+#div1 {
+
+    width: 25%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(153, 50, 204, 0.668);
+    border-radius: 10px;
+#div2 {
+    width: 255px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: rgba(65, 15, 111, 0.88);
+
+    h1{
+        color: white;
+        font-weight: 800;
+        
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+        
+        :hover{
+            color: rgb(65, 65, 251);
+            transition: 1s;
+            transform: scale(1.05);
+        }
+
+        :active{
+            color: rgb(39, 196, 144);
+        }
+
+    }
+
+    input::placeholder {
+        @extend %loginsingup;
+        
+    }
+
+    button {
+        @extend %button;
+        :active{
+        background-color: rgb(5, 135, 103);
+        transition: 2s;
+        color: crimson;
+    }
+    }
+    
+}
+}
+
+img {
+    scale: 0.75;
+
+    :hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    }
+}
+
+#img1{
+    transform: translate(550px, -225px) rotate(30deg) ;
+
+    :hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    }
+}
+
+#img2{
+    transform: translate(-500px, -200px) rotate(-30deg) ;
+
+
+}
+
+#img3{
+    transform: translate(-650px, -700px) rotate(5deg) ;
+}
+
+#img4{
+    transform: translate(350px, -1100px) rotate(190deg) ;
+}
+
+#img5{
+    transform: translate(550px, -1100px) ;
+}
+
+#img6{
+    transform: translate(-350px, -1100px) rotate(35deg) ;
+}
+
+#img7{
+    transform: translate(-500px, -1550px) rotate(-15deg) ;
+}
+
+#img8{
+    transform: translate(250px, -1350px) ;
+}
+
+#img9{
+    transform: translate(750px, -1200px) rotate(-2deg) ;
+}
+
+#img10{
+    transform: translate(350px, -1400px) rotate(-10deg) ;
+}
+
+#img11{
+    transform: translate(-750px, -2050px) rotate(10deg) ;
+}
+
+#img12{
+    transform: translate(750px, -2250px) rotate(-10deg) ;
+}
+
+#img13{
+    transform: translate(-750px, -1850px) rotate(1deg) ;
+}
+
