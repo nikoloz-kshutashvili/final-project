@@ -1,0 +1,39 @@
+@mixin small-card{
+    background-color: rgb(28, 29, 28);
+    width: 300px;
+    height: 150px;
+    display: flex;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.76);
+-webkit-box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.76);
+-moz-box-shadow: 4px 4px 8px 0px rgba(255,255,255,0.76);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
+@mixin big-card{
+    background-color: rgb(28, 29, 28);
+    width: 400px;
+    height: 165px;
+    display: flex;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    box-shadow: 5px 5px 8px 0px rgba(255,255,255,0.76);
+-webkit-box-shadow: 5px 5px 8px 0px rgba(255,255,255,0.76);
+-moz-box-shadow: 5px 5px 8px 0px rgba(255,255,255,0.76);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

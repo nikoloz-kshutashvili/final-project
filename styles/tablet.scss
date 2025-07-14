@@ -1,0 +1,624 @@
+@import 'veriables';
+@import 'reset';
+@import 'placeholder';
+@import 'mixin';
+@import 'media-queries';
+@import 'animations';
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    box-sizing: border-box;
+    top: 0;
+
+
+    #img {
+        width: 125px;
+        height: 85px;
+        background-image: url(./../images/GAMESQUARE.png);
+        background-position: center;
+        background-size: cover;
+        border: 10px;
+        // transform: translate(550px, 0px);
+    }
+    i {
+        color: white ;
+        font-size: 25px;
+        // transform: translate(-550px);
+    } 
+
+
+
+    input{
+        width: 150px;
+        height: 25px;
+        border: none;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: rgb(233, 231, 231);
+
+
+    }
+    button{
+        height: 25px;
+        border: none;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgb(233, 231, 231);
+
+        i{
+            color: black;
+        }
+
+
+
+    }
+
+    // #mic,#not {
+    //     width: 50px;
+    //     height: 50px;
+    //     background-color: rgba(185, 193, 190, 0.613);
+    //     border-radius: 100%;
+    //     box-sizing: border-box;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+
+    //     i {
+    //         color: rgb(248, 239, 239);
+    //     }
+    // }
+}
+
+#search::placeholder {
+    color: black;
+    font-weight: 100;
+    font-style: oblique;
+    font-family: serif;
+    transform: translate(10px);
+}
+
+#search {
+    display: flex;
+    margin-left: 15px;
+
+}
+
+
+
+nav{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-left: 30px;
+    a{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: rgba(255, 255, 255, 0.921);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    }
+
+    #active{
+        color: rgba(27, 211, 202, 0.795);
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        transition: 1.5s;
+
+
+    }
+    #active:hover{
+    color: rgb(27, 211, 202);
+    scale: 1.05;
+    transition: 1.5s;
+    }
+
+    .non-active{
+    transition: 1.5s;
+    }
+    .non-active:hover{
+        color: white;
+        scale: 1.05;
+        transition: 1.5s;
+    }
+}
+
+
+
+.promo-banner {
+  width: 100%;
+  height: 590px;
+  overflow: hidden;
+  background-color: #1e0033; // your dark purple theme
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./../images/sales.png);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+//   padding-top: 85px;
+
+
+
+//   img {
+//     width: 100%;
+//     height: auto;
+//     object-fit: contain;
+//     animation: fadeIn 1s ease-in-out;
+//   }
+}
+
+// Animation keyframes
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// #carouselExampleAutoplaying {
+//     z-index: -1;
+// }
+
+.mpop{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.big-div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#big-div{
+    margin-top: 45px;
+}
+
+
+.item4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item3 {
+    // width: 100%;
+    // height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+        align-items: center;
+    justify-content: center;
+}
+
+.card-small{
+    @include small-card;
+    transition: 2s;
+}
+
+.card-small:hover{
+    transition: 2s;
+    scale: 1.015;
+
+box-shadow: 4px 4px 8px 0px rgba(51,14,156,1);
+-webkit-box-shadow: 4px 4px 8px 0px rgba(51,14,156,1);
+-moz-box-shadow: 4px 4px 8px 0px rgba(51,14,156,1);
+    
+}
+
+
+.card-b{
+    @include big-card;
+    transition: 2s;
+    width: 450px;
+}
+
+.card-b:hover{
+    transition: 2s;
+    scale: 1.015;
+
+box-shadow: 5px 5px 8px 0px rgba(134,21,173,1);
+-webkit-box-shadow: 5px 5px 8px 0px rgba(134,21,173,1);
+-moz-box-shadow: 5px 5px 8px 0px rgba(134,21,173,1);
+
+    
+}
+
+#rdr1{
+    background-image: url(./../images/rdr1.jpeg);
+}
+
+#witcher{
+    background-image: url(./../images/witcher.jpg);
+}
+
+#wukong{
+    background-image: url(./../images/wukong.jpg);
+}
+
+#life{
+    background-image: url(./../images/life.jpg);
+}
+
+#detroit{
+    background-image: url(./../images/detroit.jpg);
+}
+
+#walking{
+    background-image: url(./../images/walking-dead.jpg);
+}
+
+#tomb{
+    background-image: url(./../images/tomb.jpg);
+}
+
+#nightmare2{
+    background-image: url(./../images/nightmare2.jpg);
+}
+
+#mortal1{
+    background-image: url(./../images/mortal1.jpg);
+}
+
+#halo{
+    background-image: url(./../images/halo.jpeg);
+}
+
+#hk{
+    background-image: url(./../images/hk.jpeg);
+}
+
+#gowr{
+    background-image: url(./../images/gowr.jpg);
+}
+
+#gta5{
+    background-image: url(./../images/gta5.jpg);
+}
+
+#forest{
+    background-image: url(./../images/forest.jpg);
+}
+
+#fnaf-mim{
+    background-image: url(./../images/fnaf-mimic.jpg);
+}
+
+#limbo{
+    background-image: url(./../images/limbo.jpg);
+}
+
+#fears1{
+    background-image: url(./../images/fears1.jpg);
+}
+
+#fire{
+    background-image: url(./../images/fire.jpg);
+}
+
+#sub{
+    background-image: url(./../images/sub.jpg);
+}
+
+#mortal11{
+    background-image: url(./../images/mortal11.jpg);
+}
+
+#evil8{
+    background-image: url(./../images/evil8.jpg);
+}
+
+#farcry6{
+    background-image: url(./../images/farcry6.jpg);
+}
+
+#raft{
+    background-image: url(./../images/raft.jpg);
+}
+
+#ink{
+    background-image: url(./../images/ink.jpg);
+}
+
+#dead{
+    background-image: url(./../images/dead.jpg);
+}
+
+#assassin1{
+    background-image: url(./../images/assassin1.jpg);
+}
+
+#blue{
+    background-image: url(./../images/blue.jpg);
+}
+
+#elden{
+    background-image: url(./../images/slay.jpg);
+}
+
+
+#farcry0{
+    background-image: url(./../images/farcry0.jpg);
+}
+
+#iron{
+    background-image: url(./../images/iron.jpg);
+}
+
+#fnaf-pit{
+    background-image: url(./../images/fnaf-pit.jpg);
+}
+
+#evil7{
+    background-image: url(./../images/evil7.jpg);
+}
+
+#evil4{
+    background-image: url(./../images/evil4.jpg);
+}
+
+#undertale{
+    background-image: url(./../images/undertale.jpg);
+}
+
+#sons-of-forest{
+    background-image: url(./../images/sons-of-forest.jpg);
+}
+
+#play{
+    background-image: url(./../images/play.jpg);
+}
+
+#power{
+    background-image: url(./../images/power.jpg);
+}
+
+#stray{
+    background-image: url(./../images/stray.jpg);
+}
+
+#life2{
+    background-image: url(./../images/life2.jpg);
+}
+
+#lethal{
+    background-image: url(./../images/lethal.jpg);
+}
+
+#evil3{
+    background-image: url(./../images/evil3.jpg);
+}
+
+#spider{
+    background-image: url(./../images/spider.jpg);
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(24, 24, 24);
+    margin-top: 50px;
+    padding-top: 63px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+#row1 > h1 {
+    width: 155px;
+height: 30px;
+font-family: Helvetica;
+font-weight: 700;
+font-size: 26px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#row1 > h2 {
+width: 295px;
+height: 80px;
+font-family: Helvetica;
+font-weight: 700;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #99999A;
+}
+
+
+
+#row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+#row2 > h1 {
+    width: 108px;
+height: 24px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 21px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+margin-bottom: 23px;
+}
+
+#row2 > p,a {
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #5863E3;
+text-decoration: none;
+}
+
+
+
+#row3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 66px;
+    gap: 9px;
+}
+
+#row3 > h1 {
+width: 69px;
+height: 24px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 21px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+margin-bottom: 23px;
+}
+
+#row3 > p {
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #5863E3;
+}
+
+
+
+#row4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 50px;
+    gap: 19px;
+}
+
+#row4 > h1 {
+width: 114px;
+height: 24px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 21px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+margin-bottom: 13px;
+}
+
+#line1 {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+}
+
+#line1 > img {
+    width: 21px;
+height: 15px;
+}
+
+#line1 > span {
+    width: 139px;
+height: 19px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#line2 {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+}
+
+#line2 > img {
+    width: 27px;
+height: 22px;
+}
+
+#line2 > span {
+    width: 144px;
+height: 19px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#line3 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#line3 > img {
+    width: 13px;
+height: 22px;
+}
+
+#line3 > span {
+width: 213px;
+height: 19px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#tbc{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 360px;
+}

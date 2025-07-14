@@ -1,0 +1,406 @@
+@import 'reset';
+@import 'veriables';
+@import 'mixin';
+
+
+body{
+    background-color: black;
+}
+
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 20px;
+    top: 0;
+
+
+    #img {
+        width: 150px;
+        height: 85px;
+        background-image: url(./../../images/GAMESQUARE.png);
+        background-position: center;
+        background-size: cover;
+        border: 10px;
+        // transform: translate(550px, 0px);
+    }
+    i {
+        color: white ;
+        font-size: 25px;
+        // transform: translate(-550px);
+    } 
+
+
+
+    input{
+        width: 180px;
+        height: 25px;
+        border: none;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: rgb(233, 231, 231);
+
+
+    }
+    button{
+        height: 27px;
+        border: none;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgb(233, 231, 231);
+
+        i{
+            color: black;
+        }
+
+
+
+    }
+
+    // #mic,#not {
+    //     width: 50px;
+    //     height: 50px;
+    //     background-color: rgba(185, 193, 190, 0.613);
+    //     border-radius: 100%;
+    //     box-sizing: border-box;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+
+    //     i {
+    //         color: rgb(248, 239, 239);
+    //     }
+    // }
+}
+
+#search::placeholder {
+    color: black;
+    font-weight: 100;
+    font-style: oblique;
+    font-family: serif;
+    transform: translate(10px);
+}
+
+#search {
+    display: flex;
+
+    margin-left: 100px;
+}
+
+
+
+nav{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-left: 150px;
+
+    a{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: rgba(255, 255, 255, 0.921);
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    #active{
+        color: rgba(27, 211, 202, 0.795);
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        transition: 1.5s;
+
+
+    }
+    #active:hover{
+    color: rgb(27, 211, 202);
+    scale: 1.05;
+    transition: 1.5s;
+    }
+
+    .non-active{
+    transition: 1.5s;
+    }
+    .non-active:hover{
+        color: white;
+        scale: 1.05;
+        transition: 1.5s;
+    }
+}
+
+
+#h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: monospace;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+#h2{
+    color: rgb(0, 106, 255);
+    margin-top: 20px;
+    margin-left: 110px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: serif;
+}
+
+.line{
+    background-color: $i-will-think-about-it;
+    width: 90%;
+    height: 2px;
+    margin: 25px;
+    box-sizing: border-box;
+}
+
+.cont{
+    @include sup-cont;
+
+}
+
+#first {
+    margin-top: 10px;
+    img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+#fifth{
+    img{
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+#isu{
+    width: 80%;
+    height: 100px;
+    margin-left: 75px;
+    margin-top: 30px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 35px;
+    background-color: rgb(29, 66, 117);
+    display: flex;
+    align-items: center;
+}
+
+#isu::placeholder{
+    color: rgba(255, 255, 255, 0.469);
+    font-size: 25px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(24, 24, 24);
+    margin-top: 50px;
+    padding-top: 63px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+#row1 > h1 {
+    width: 155px;
+height: 30px;
+font-family: Helvetica;
+font-weight: 700;
+font-size: 26px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#row1 > h2 {
+width: 295px;
+height: 80px;
+font-family: Helvetica;
+font-weight: 700;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #99999A;
+}
+
+
+
+#row2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 192px;
+    gap: 9px;
+}
+
+#row2 > h1 {
+    width: 108px;
+height: 24px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 21px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+margin-bottom: 23px;
+}
+
+#row2 > p,a {
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #5863E3;
+text-decoration: none;
+}
+
+
+
+#row3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 86px;
+    gap: 9px;
+}
+
+#row3 > h1 {
+width: 69px;
+height: 24px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 21px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+margin-bottom: 23px;
+}
+
+#row3 > p {
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #5863E3;
+}
+
+
+
+#row4 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 86px;
+    gap: 19px;
+}
+
+#row4 > h1 {
+width: 114px;
+height: 24px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 21px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+margin-bottom: 13px;
+}
+
+#line1 {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+}
+
+#line1 > img {
+    width: 21px;
+height: 15px;
+}
+
+#line1 > span {
+    width: 139px;
+height: 19px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#line2 {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+}
+
+#line2 > img {
+    width: 27px;
+height: 22px;
+}
+
+#line2 > span {
+    width: 144px;
+height: 19px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#line3 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#line3 > img {
+    width: 13px;
+height: 22px;
+}
+
+#line3 > span {
+width: 213px;
+height: 19px;
+font-family: Helvetica;
+font-weight: 400;
+font-size: 17px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #FFFFFF;
+}
+
+#tbc{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 360px;
+}
