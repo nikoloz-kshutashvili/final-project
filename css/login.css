@@ -74,59 +74,89 @@ img :hover {
   transition: transform 0.3s;
 }
 
-#img1 {
-  transform: translate(550px, -225px) rotate(30deg);
+img {
+  position: absolute;
 }
-#img1 :hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.3s;
+
+#img1 {
+  top: 100px;
+  left: 1000px;
+  transform: rotate(30deg);
 }
 
 #img2 {
-  transform: translate(-500px, -200px) rotate(-30deg);
+  top: 400px;
+  right: 1000px;
+  transform: rotate(-30deg);
 }
 
 #img3 {
-  transform: translate(-650px, -700px) rotate(5deg);
+  top: 400px;
+  left: 1000px;
+  transform: rotate(10deg);
 }
 
 #img4 {
-  transform: translate(350px, -1100px) rotate(190deg);
+  top: 50px;
+  left: 300px;
+  transform: rotate(10deg);
 }
 
 #img5 {
-  transform: translate(550px, -1100px);
+  top: 500px;
+  right: 300px;
+  transform: rotate(-10deg);
 }
 
 #img6 {
-  transform: translate(-350px, -1100px) rotate(35deg);
+  top: 35px;
+  right: 45px;
+  transform: rotate(-5deg);
 }
 
 #img7 {
-  transform: translate(-500px, -1550px) rotate(-15deg);
+  top: 200px;
+  left: 40px;
+  transform: rotate(40deg);
 }
 
 #img8 {
-  transform: translate(250px, -1350px);
+  top: 200px;
+  right: 40px;
 }
 
 #img9 {
-  transform: translate(750px, -1200px) rotate(-2deg);
+  top: 500px;
+  left: 600px;
+  transform: rotate(0deg);
 }
 
 #img10 {
-  transform: translate(350px, -1400px) rotate(-10deg);
+  top: 300px;
+  right: 400px;
+  transform: rotate(-10deg);
 }
 
 #img11 {
-  transform: translate(-750px, -2050px) rotate(10deg);
+  top: 300px;
+  left: 370px;
+  transform: rotate(45deg);
 }
 
 #img12 {
-  transform: translate(750px, -2250px) rotate(-10deg);
+  top: 450px;
+  left: 10px;
+  transform: rotate(-5deg);
 }
 
 #img13 {
-  transform: translate(-750px, -1850px) rotate(1deg);
+  top: 10px;
+  left: 45px;
+  transform: rotate(5deg);
+}
+
+#img14 {
+  top: 10px;
+  left: 45px;
+  transform: rotate(5deg);
 }/*# sourceMappingURL=login.css.map */
