@@ -94,15 +94,15 @@ nav .non-active:hover {
 }
 
 .main {
-  padding-left: 75px;
+  padding-left: 55px;
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 80px;
   margin-top: 100px;
 }
 .main .vid {
-  width: 500px;
-  height: 350px;
+  width: 525px;
+  height: 400px;
   background-image: url(./../../images/lifec1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,6 +123,8 @@ nav .non-active:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+  margin-right: 50px;
 }
 .main .img {
   width: 100%;
@@ -152,6 +154,7 @@ nav .non-active:hover {
 .mon img {
   width: 170px;
   height: 60px;
+  margin-left: 150px;
 }
 .mon button {
   width: 100px;
@@ -162,6 +165,7 @@ nav .non-active:hover {
   font-weight: 400;
   font-family: sans-serif;
   transition: 2s;
+  margin-left: 50px;
 }
 .mon button:hover {
   scale: 1.05;
@@ -203,13 +207,14 @@ nav .non-active:hover {
 }
 
 .vid-main {
-  height: 380px;
+  height: 465px;
   display: flex;
   width: 50%;
   background-color: #0899f9;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 @keyframes border {
@@ -232,6 +237,10 @@ nav .non-active:hover {
 
 #free {
   width: 120px;
-  margin-left: 50px;
+  margin-left: 330px;
   border-radius: 55px;
+}
+
+#butt {
+  margin-left: 80px;
 }/*# sourceMappingURL=life-is-strange.css.map */

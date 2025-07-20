@@ -142,8 +142,8 @@ nav{
     margin-top: 100px;
 
     .vid{
-        width: 500px;
-        height: 350px;
+        width: 525px;
+        height: 400px;
         background-image: url(./../../images/rdr2sec.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -162,20 +162,24 @@ nav{
         border-radius: 13px;
         background-color: #75051a;
         width: 40%;
+        height: 495px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
+        padding: 15px;
     }
 
     
     .img{
-        width: 100%;
-        height: 100px;
-        background-image: url(./../../images/rdr2.jpeg);
+        width: 273px;
+        height: 140px;
+        background-image: url(./../../images/rdr2.1.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
+        border-radius: 2px;
     }
 }
 
@@ -203,6 +207,11 @@ nav{
     img{
         width: 170px;
         height: 60px;
+        margin-left: 65px;
+    }
+
+    #mon1{
+        margin-left: 185px;
     }
 
     button{
@@ -262,13 +271,14 @@ nav{
 }
 
 .vid-main{
-    height: 380px;
+    height: 495px;
     display: flex;
     width: 50%;
     background-color: #7d071d;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 
@@ -293,3 +303,6 @@ margin-top: 50px;
     align-items: center;
 }
 
+#butt{
+    margin-left: 80px;
+}
