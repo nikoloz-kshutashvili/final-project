@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.976);
 }
 
 header {
@@ -34,7 +34,7 @@ header input {
   background-color: rgb(233, 231, 231);
 }
 header button {
-  height: 27px;
+  height: 25px;
   border: none;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -107,12 +107,18 @@ nav .non-active:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
+  animation-name: border;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 .main p {
   color: white;
 }
 .main .others {
-  width: 35%;
+  border-radius: 13px;
+  background-color: #75051a;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +137,6 @@ nav .non-active:hover {
   background-color: rgb(36, 60, 93);
   width: 80%;
   height: 100px;
-  margin-left: 75px;
   margin-top: 10px;
   border-radius: 2px;
   box-sizing: border-box;
@@ -151,9 +156,76 @@ nav .non-active:hover {
 .mon button {
   width: 100px;
   height: 50px;
-  background-color: rgb(141, 255, 47);
+  background-color: rgba(134, 247, 41, 0.791);
   color: white;
   font-size: 15px;
   font-weight: 400;
   font-family: sans-serif;
+  transition: 2s;
+}
+.mon button:hover {
+  scale: 1.05;
+  background-color: rgba(15, 200, 55, 0.791);
+  transition: 2s;
+}
+.mon button:active {
+  scale: 1.03;
+  background-color: rgba(41, 247, 86, 0.791);
+  transition: 2s;
+}
+
+.mon-b {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 134, 134);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.line {
+  background-color: rgb(65, 15, 111);
+  width: 100%;
+  height: 2px;
+  margin: 25px 0px;
+  box-sizing: border-box;
+}
+
+.line2 {
+  background-color: rgb(0, 98, 133);
+  width: 100%;
+  height: 2px;
+  margin: 25px 0px;
+  box-sizing: border-box;
+}
+
+.vid-main {
+  height: 380px;
+  display: flex;
+  width: 50%;
+  background-color: #7d071d;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+@keyframes border {
+  1% {
+    border-radius: 100%;
+  }
+  100% {
+    border-radius: 10px;
+  }
+}
+.somthin {
+  margin-top: 50px;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=rdr2.css.map */
